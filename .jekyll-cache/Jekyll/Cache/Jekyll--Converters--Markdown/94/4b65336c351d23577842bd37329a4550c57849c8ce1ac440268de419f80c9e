@@ -1,0 +1,4 @@
+I"Q<h1 id="probabilistic-decision-making-models-for-proms">Probabilistic Decision Making Models for PROMs.</h1>
+
+<p>This project focuses on using PROMs for ML and decision support tools. The project aims to develop a systematic approach to build probabilistic programming and Bayes network models based on PROMs. These probabilistic PROM models will enable more efficient collection of PROMs as they will be able to deal with missing inputs, select questions specific to the patient’s condition and their previous answers, and stop asking questions when sufficient information is acquired.</p>
+:ET

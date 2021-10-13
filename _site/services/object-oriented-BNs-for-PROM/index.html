@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Object Oriented BNs for PROM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="Object Oriented BNs for PROM"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  
+  
+  
+    <!-- for mathjax support -->
+  
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Links</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="120px" height="32px" alt="DEMOPROMS" src="/images/logo/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="DEMOPROMS" src="/images/logo/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Links</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Object Oriented BNs for PROM</h1>
+        <div class="content"><p>For PROMs, BN will be defined as BN, which consists of two discrete variable sets <em>X</em> and <em>C</em>. <em>X</em> represents the set of question items in the PROM, and <em>C</em> the set of hidden factors that the PROM aims to measure.</p>
+
+<p>PROM BNs do not have a fixed structure. The model can be learned from PROM data or expert knowledge according to available resources. For example, a knowledge-based PROM structure based on the assessment and evaluation BN structure in education is given in Figure 2. In this structure, the question items are the children of the latent factors. Based on expert knowledge, this structure can be modified. For example, if there are direct relationships between latent factors, they can be added to the model. Besides, score-based, constraint-based or hybrid BN learning algorithms can be used to learn the PROM structure entirely from the data.</p>
+
+<figure>
+<img src="/images/oobn.png" alt="Trulli" style="width:100%" />
+<figcaption align="center"><b>Figure 2. Example of Knowledge-Based BN Structure for PROM</b></figcaption>
+</figure>
+
+<p>Generally, the contribution of a single PROM to decision making is limited. A physician considers multiple PROMs as well as other clinical variables and patient preferences when making a decision. PROM BNs also need to be modularly integrated into larger probabilistic models in order to provide useful decision support.</p>
+
+<p>Object Oriented Bayesian Networks (OOBN) provide PROMs with a suitable structure to provide this modularity. An OOBN object consists of three discrete sets of variables: output variables O, input variables I, and encapsulated variables E (Koller and Pfeffer, 1997). Parent and child variables of encapsulated variables within the object can only be other variables within the object; encapsulated variables cannot have parents or children outside the object. Output variables can have child variables outside the object. Input variables are placeholders for variables that are themselves outside the object and have child variables inside the object. Input variables can have child variables from within the object, but cannot themselves be children of another variable within the object. Input and output variables form the interface of the BN object. Only input and output variables can have parents and children other than BN (for more detailed information on OOBN, see Koller and Pfeffer (1997)).</p>
+
+<p>PROM BN output variables hidden factors O := C, encapsulated variables E := X with question items is an OOBN object. Latent factors and non-object parents of question items are also input variables. Input variables can be patient information such as age, gender, or causal factors. Input variables are important when connecting PROM BNs to larger and larger BNs.</p>
+
+<p>Figure 3A shows two PROM BN objects made for different PROMs integrated into a larger model. OOBN allows us to abstract the properties of their internal structures while combining these BNs with the large model. OOBN enables BNs to be integrated into large models in a modular manner, without making any changes to their internal structure and without being too dependent on their internal structures. Figure 3B shows the internal structures of these objects.</p>
+
+<figure>
+<img src="/images/ndba.png" alt="Trulli" style="width:100%" />
+<figcaption align="center"><b>Figure 3. A - PROM BN Objects integrated into another BN model, B - Internal parts of PROM objects </b></figcaption>
+</figure>
+
+<p><strong><em>Bu yazının Türkçe versiyonunu okumak için <a href="/services/HSBO-icin-nesneye-dayali-BAlar/">tıklayınız</a>.</em></strong></p>
+
+<h1 id="references">References</h1>
+
+<p>Koller, D., Pfeffer, A. 1997. “Object-Oriented Bayesian Networks”. Içinde Proceedings of the 13th Conference on Uncertainty in Artificial Intelligence (ss. 302–313). Providence, RI.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">DEMOPROMS</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Links</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/emreercin" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">DEMOPROMS Project Website</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

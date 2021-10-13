@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Interface Design",
+    "description": "Accesible design for clinical research and applications.",
+    "image": {
+      "url": "images/features/noun_branding_1885335.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Bayesian Networks",
+    "description": "Bayesian network models for clinical decision support.",
+    "image": {
+      "url": "images/features/noun_The Process_1885341.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Computational Clinimetrics",
+    "description": "Expert systems and ML for clinical information and statistics.",
+    "image": {
+      "url": "images/features/noun_3d modeling_1885342.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]

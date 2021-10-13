@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bayesian Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="Bayesian Network"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  
+  
+  
+    <!-- for mathjax support -->
+  
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Links</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="120px" height="32px" alt="DEMOPROMS" src="/images/logo/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="DEMOPROMS" src="/images/logo/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Links</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Bayesian Network</h1>
+        <div class="content"><p>Bayesian Networks (BNs) are graphical models that represent the combined probability distribution among a group of variables (Pearl, 1988).</p>
+
+<p>A BN consists of two parts, the graphical structure and the parameters. The graphical structure is a directional acyclic graph. Nodes in the graph represent variables, edges represent relationships between variables. If two nodes A and B in a BA are directly connected from A to B by an edge, then A is the parent of B and B is the child of A. Each node has parameters that define its conditional probability distribution with its parents. In discrete BNs, these parameters are defined in conditional probability tables.</p>
+
+<p>When a value is entered for any group of variables in the BN, the posterior probability distribution of other unknown variables can be calculated with inference algorithms such as a combination tree (Lauritzen and Spiegelhalter, 1988). The process of entering a value for a variable is also called entering evidence or entering an observation. With probabilistic inferences in the Bayes Network, predictive inference from parents to children, diagnostic inference from children to parents, or all-round inference between parents when the child is known can be calculated. Probabilities inference algorithms are useful for PROMs. When a value is entered into any set of questions in a PROM modeled as a BN, the posterior distributions of other questions and hidden factors can be calculated.</p>
+
+<p>BNs can be made based on information, data, or a combination of the two. When the BN structure is made based on knowledge, the arrows in the model are determined according to the cause-effect relationships about the subject. BNs have structure learning algorithms to learn completely from data. These algorithms are divided into three groups as score-based, constraint-based and hybrid algorithms. Score-based algorithms aim to find the structure that rewards the fit of the model to the data, penalizes the model complexity, and optimizes the regulated scores (Gámez et al., 2011). Scores such as the Bayesian information criterion are suitable for this purpose. Constraint-based algorithms apply statistical tests to determine the conditional independence of the data and learn the BN structure compatible with the conditional independences detected (Le et al., 2019). Hybrid algorithms combine score-based and constraint-based principles. For example, the max-min climbing algorithm finds the graphical structure of the model without direction by applying constraint-based tests, then it aims to determine the directions using a score-based climbing algorithm (Tsamardinos et al., 2006).</p>
+
+<p><strong><em>Bu yazının Türkçe versiyonunu okumak için <a href="/services/bayes_aglari/">tıklayınız</a>.</em></strong></p>
+
+<h1 id="references">References</h1>
+
+<ul>
+  <li>Pearl, J. 1988. “Probabilistic Reasoning in Intelligent Systems”. Morgan Kaufmann.</li>
+  <li>Lauritzen, S. L., Spiegelhalter, D. J. 1988. “Local Computations with Probabilities on Graphical Structures and Their Application to Expert Systems”. Journal of the Royal Statistical Society: Series B (Methodological), 50(2), 157–194.</li>
+  <li>Gámez, J. A., Mateo, J. L., Puerta, J. M. 2011. “Learning Bayesian networks by hill climbing: efficient methods based on progressive restriction of the neighborhood”. Data Mining and Knowledge Discovery, 22(1–2), 106–148.</li>
+  <li>Le, T. D., Hoang, T., Li, J., Liu, L., Liu, H., Hu, S. 2019. “A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs”. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 16(5), 1483–1495.</li>
+  <li>Tsamardinos, I., Brown, L. E., Aliferis, C. F. 2006. “The max-min hill-climbing Bayesian network structure learning algorithm”. Machine Learning, 65(1), 31–78.</li>
+</ul>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">DEMOPROMS</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Links</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/emreercin" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">DEMOPROMS Project Website</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

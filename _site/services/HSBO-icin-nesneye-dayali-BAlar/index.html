@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HSBÖ için Nesneye Dayalı BA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="HSBÖ için Nesneye Dayalı BA"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  
+  
+  
+    <!-- for mathjax support -->
+  
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Links</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="120px" height="32px" alt="DEMOPROMS" src="/images/logo/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="DEMOPROMS" src="/images/logo/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Links</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">HSBÖ için Nesneye Dayalı BA</h1>
+        <div class="content"><p>HBSÖ’ler için BA, X ve C şeklinde iki ayrık değişken kümesinden oluşan BA olarak tanımlanacaktır. X HBSÖ’deki soru maddelerinin kümesini, C de HBSÖ’nün ölçmeyi amaçladığı gizli faktörlerin kümesini temsil eder.</p>
+
+<p>HBSÖ BA’larının sabit bir yapısı yoktur. Model eldeki kaynaklara göre HBSÖ verisinden veya uzman bilgisinden öğrenilebilir. Örneğin, Şekil 2’de eğitimde ölçme değerlendirme BA yapısına dayanan bilgi temelli bir HBSÖ yapısı verilmektedir. Bu yapıda soru maddeleri gizli faktörlerin çocuklarıdır. Uzman bilgisine dayalı olarak bu yapı değiştirilebilir. Örneğin, gizli faktörler arasında doğrudan ilişkiler varsa, bunlar modele eklenebilir. Bunun yanında, skor-bazlı, kısıt-bazlı veya melez BA öğrenme algoritmaları HBSÖ yapısını tamamen veriden öğrenmek için kullanılabilir.</p>
+
+<figure>
+<img src="/images/oobn.png" alt="Trulli" style="width:100%" />
+<figcaption align="center"><b>Şekil 2. HBSÖ için Bilgi Temelli BA Yapısı Örneği</b></figcaption>
+</figure>
+
+<p>Genellikle tek bir HBSÖ’nün karar vermedeki katkısı kısıtlıdır. Bir doktor, karar verirken birden çok HBSÖ’nün yanında, diğer klinik değişkenleri ve hasta tercihlerini de değerlendirir. HBSÖ BA’larının da kullanışlı karar destek sağlayabilmesi için modüler şekilde daha büyük yapıdaki olasılıksal modellere entegre olabilmesi gerekmektedir.</p>
+
+<p>Nesneye Dayalı Bayes Ağları (NDBA) HBSÖ’lere bu modülerliği sağlamak için uygun bir yapı sunmaktadır. Bir NDBA nesnesi çıktı değişkenler O, girdi değişkenler I ve kapsüllenmiş değişkenler E olmak üzere üç ayrık değişken kümesinden oluşur (Koller ve Pfeffer, 1997). Nesne içindeki kapsüllenmiş değişkenlerin ebeveyn ve çocuk değişkenleri sadece nesne içindeki diğer değişkenler olabilir; kapsüllenmiş değişkenler nesne dışından ebeveyn ve çocuklara sahip olamazlar. Çıktı değişkenler, nesne dışından çocuk değişkenlere sahip olabilirler. Girdi değişkenler, kendileri nesne dışından olan ve nesne içinde çocuk değişken sahibi olan değişkenler için yer tutuculardır. Girdi değişkenler, nesne içinden çocuk değişkenlere sahip olabilirler fakat kendileri nesne içindeki başka bir değişkenin çocuğu olamazlar. Girdi ve çıktı değişkenler BA nesnesinin arayüzünü oluşturur. Sadece girdi ve çıktı değişkenler BA dışında ebeveyn ve çocuğa sahip olabilirler (NDBA hakkında daha detaylı bilgi için Koller ve Pfeffer (1997) incelenebilir).</p>
+
+<p>HBSÖ BA çıktı değişkenleri gizli faktörler O := C, kapsüllenmiş değişkenleri soru maddeleri olan E := X bir NDBA nesnesidir. Gizli faktörler ve soru maddelerinin nesne dışındaki ebeveynleri de girdi değişkenlerdir. Girdi değişkenler yaş, cinsiyet gibi hasta bilgisi veya nedensel faktörler olabilir. Girdi değişkenler HBSÖ BA’larını daha kapsamlı ve büyük BA’lara bağlarken önemlidir.</p>
+
+<p>Şekil 3A’da değişik HBSÖ’ler için yapılmış iki HBSÖ BA nesnesinin daha büyük bir modele entegre olmuş hali gösterilmektedir. NDBA bu BA’ları büyük modelle birleştirirken iç yapılarının özelliklerini soyutlamamızı sağlamaktadır. NDBA, BA’ların iç yapısında bir değişiklik yapmadan ve iç yapılarına çok bağlı olmadan, modüler şekilde büyük modellere entegre edilmeyi sağlamaktadır. Şekil 3B’de bu nesnelerin iç yapıları gösterilmektedir.</p>
+
+<figure>
+<img src="/images/ndba.png" alt="Trulli" style="width:100%" />
+<figcaption align="center"><b>Şekil 3. A - PROM BN Nesnelerinin başka BN modeline entegre olmuş hali, B - PROM Nesnelerinin iç yapıları</b></figcaption>
+</figure>
+
+<p><strong><em>To read the English version of the post, click <a href="/services/object-oriented-BNs-for-PROM/">here</a>.</em></strong></p>
+
+<h1 id="kaynaklar">Kaynaklar</h1>
+
+<p>Koller, D., Pfeffer, A. 1997. “Object-Oriented Bayesian Networks”. Içinde Proceedings of the 13th Conference on Uncertainty in Artificial Intelligence (ss. 302–313). Providence, RI.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">DEMOPROMS</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Links</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/emreercin" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">DEMOPROMS Project Website</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

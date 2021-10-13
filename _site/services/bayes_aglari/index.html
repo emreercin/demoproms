@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bayes Ağları</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="Bayes Ağları"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  
+  
+  
+    <!-- for mathjax support -->
+  
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Links</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="120px" height="32px" alt="DEMOPROMS" src="/images/logo/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="DEMOPROMS" src="/images/logo/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Links</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Bayes Ağları</h1>
+        <div class="content"><p>BA’lar bir grup değişken arasındaki birleşik olasılık dağılımını temsil eden grafiksel modellerdir (Pearl, 1988).</p>
+
+<p>Bir BA grafiksel yapı ve parametreler olmak üzere iki parçadan oluşur. Grafiksel yapı yönlü döngüsüz graftır. Graftaki düğümler değişkenleri, oklar değişkenler arasındaki ilişkileri temsil eder. Bir BA’daki iki düğüm A ve B, A’dan B’ye doğrudan bir ok ile bağlıysa A B’nin ebeveyni, B A’nın çocuğudur. Her düğümün ebeveynleriyle olan koşullu olasılık dağılımını tanımlayan parametreleri vardır. Kesikli BA’larda bu parametreler koşullu olasılık tablolarında tanımlanır.</p>
+
+<p>BA’da herhangi bir grup değişkene değer girildiğinde, diğer bilinmeyen değişkenlerin sonsal olasılık dağılımı birleşim ağacı gibi çıkarım algoritmalarıyla hesaplanabilir (Lauritzen ve Spiegelhalter, 1988). Değişkene değer girme işlemine kanıt girme veya gözlem girme de denilir. BA’daki olasılıksal çıkarımlar ile ebeveynlerden çocuğa doğru tahminsel çıkarım, çocuklardan ebeveyne doğru teşhissel çıkarım veya çocuk bilindiğinde ebeveynler arasında hepten gidişsel çıkarım hesaplanabilir.</p>
+
+<p>Olasılıklar çıkarım algoritmalar HBSÖ’ler için kullanışlıdır. BA olarak modellenmiş bir HBSÖ’de herhangi bir soru kümesine değer girildiğinde, diğer soruların ve gizli faktörlerin sonsal dağılımları hesaplanabilir. BA’lar bilgiye, veriye veya bu ikisinin birleşimine dayanarak yapılabilir. BA yapısı bilgiye dayalı şekilde yapıldığında, modeldeki oklar konu hakkındaki neden-sonuç ilişkilerine göre belirlenir. BA’ları tamamen veriden öğrenmek için yapı öğrenme algoritmaları bulunmaktadır. Bu algoritmalar skor-bazlı, kısıt-bazlı ve melez algoritmalar olmak üzere üç gruba ayrılmaktadır. Skor bazlı algoritmalar, modelin veriye uyumunu ödüllendiren, model karmaşıklığını cezalandıran, regüle edilmiş skorları optimize eden yapıyı bulmayı amaçlar (Games vd., 2011). Bayes bilgi kriteri gibi skorlar bu amaca uygundur. Kısıt-bazlı algoritmalar veriye koşullu bağımsızlığı tespit etmek için istatistiksel testler uygular ve tespit edilen koşullu bağımsızlıklara uyumlu BA yapısını öğrenir (Le vd., 2019). Melez algoritmalar, skor-bazlı ve kısıt-bazlı prensipleri birleştirir. Örneğin, max-min tırmanma algoritması kısıt-bazlı testler uygulayarak modelin grafiksel yapısını yönsüz olarak bulur, daha sonra skor-bazlı tırmanma algoritması kullanarak yönleri belirlemeyi amaçlar (Tsamardinos vd., 2006).</p>
+
+<p><strong><em>To read the English version of the post, click <a href="/services/bayesian-networks/">here</a>.</em></strong></p>
+
+<h1 id="kaynaklar">Kaynaklar</h1>
+
+<ul>
+  <li>Pearl, J. 1988. “Probabilistic Reasoning in Intelligent Systems”. Morgan Kaufmann.</li>
+  <li>Lauritzen, S. L., Spiegelhalter, D. J. 1988. “Local Computations with Probabilities on Graphical Structures and Their Application to Expert Systems”. Journal of the Royal Statistical Society: Series B (Methodological), 50(2), 157–194.</li>
+  <li>Gámez, J. A., Mateo, J. L., Puerta, J. M. 2011. “Learning Bayesian networks by hill climbing: efficient methods based on progressive restriction of the neighborhood”. Data Mining and Knowledge Discovery, 22(1–2), 106–148.</li>
+  <li>Le, T. D., Hoang, T., Li, J., Liu, L., Liu, H., Hu, S. 2019. “A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs”. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 16(5), 1483–1495.</li>
+  <li>Tsamardinos, I., Brown, L. E., Aliferis, C. F. 2006. “The max-min hill-climbing Bayesian network structure learning algorithm”. Machine Learning, 65(1), 31–78.</li>
+</ul>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">DEMOPROMS</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Links</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/emreercin" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">DEMOPROMS Project Website</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
