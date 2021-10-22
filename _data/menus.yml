@@ -1,11 +1,11 @@
 main:
-  - name: "Projects"
+  - name: "Bayesian Network"
     url: "/services/"
     weight: 2
   - name: "Team"
     url: "/team/"
     weight: 3
-  - name: "About"
+  - name: "Overview"
     url: "/about/"
     weight: 4
   - name: "Links"
@@ -16,6 +16,6 @@ footer:
   - name: "Home"
     url: "/"
     weight: 1
-  - name: "Links"
-    url: "/contact/"
+  - name: "Bayesian Network"
+    url: "/about/"
     weight: 2

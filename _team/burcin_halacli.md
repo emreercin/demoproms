@@ -10,6 +10,4 @@ weight: 2
 layout: team
 ---
 
-Burçin is an associate professor in the Department of Internal Diseases at the Medicine Faculty, Hacettepe University, Ankara, Turkey. His main research are is Intensive Care and Internal Diseases. He is a researcher in the project.
-
-Burçin, Ankara Hacettepe Üniversitesi Tıp Fakültesi İç Hastalıkları Anabilim Dalı'nda doçent olarak görev yapmaktadır. Başlıca araştırmaları Yoğun Bakım ve İç Hastalıklarıdır. Projede araştırmacı olarak görev almaktadır. 
+Burçin is an associate professor in the Department of Internal Diseases at the Medicine Faculty, Hacettepe University, Ankara, Turkey. His main research are is Intensive Care and Internal Diseases.
