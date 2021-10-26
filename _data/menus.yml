@@ -11,6 +11,9 @@ main:
   - name: "Links"
     url: "/contact/"
     weight: 5
+  - name: "Tr"
+    url: "emreercin.github.io/demopromstr"
+    weight: 6
 
 footer:
   - name: "Home"
