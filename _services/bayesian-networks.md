@@ -12,8 +12,6 @@ When a value is entered for any group of variables in the BN, the posterior prob
 
 BNs can be made based on information, data, or a combination of the two. When the BN structure is made based on knowledge, the arrows in the model are determined according to the cause-effect relationships about the subject. BNs have structure learning algorithms to learn completely from data. These algorithms are divided into three groups as score-based, constraint-based and hybrid algorithms. Score-based algorithms aim to find the structure that rewards the fit of the model to the data, penalizes the model complexity, and optimizes the regulated scores (Gámez et al., 2011). Scores such as the Bayesian information criterion are suitable for this purpose. Constraint-based algorithms apply statistical tests to determine the conditional independence of the data and learn the BN structure compatible with the conditional independences detected (Le et al., 2019). Hybrid algorithms combine score-based and constraint-based principles. For example, the max-min climbing algorithm finds the graphical structure of the model without direction by applying constraint-based tests, then it aims to determine the directions using a score-based climbing algorithm (Tsamardinos et al., 2006).
 
-__*Bu yazının Türkçe versiyonunu okumak için [tıklayınız](/services/bayes_aglari/).*__
-
 # References
 
 - Pearl, J. 1988. "Probabilistic Reasoning in Intelligent Systems". Morgan Kaufmann.
