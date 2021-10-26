@@ -10,5 +10,3 @@ intro_image_hide_on_mobile: true
 # Bayesian Network
 
 Below you can see the details, aims and outputs of the DEMOPROMS project. The number of the pages in here is going to increase as the team advances the project. Stay tuned.
-
-Aşağıda DEMOPROMS projesinin detaylarını, amaçlarını ve çıktılarını görebilirsiniz. Ekip projeyi ilerlettikçe buradaki sayfaların sayısı artacaktır. Bizi izlemeye devam edin.
