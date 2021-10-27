@@ -10,4 +10,4 @@ weight: 1
 layout: team
 ---
 
-Barbaros is an associate professor at the Department of Cognitive Science, Middle East Technical University, Ankara, Turkey. He is interested in decision-making and learning under uncertainty. He focuses on methodologies and techniques that combines human judgement, published evidence and uncertain data to improve learning. This includes the use of Bayesian approaches, causal and probabilistic graphical models for learning quantitative models that can be understood and revised by domain experts.
+Dr. Barbaros Yet is an associate professor at the Department of Cognitive Science, Middle East Technical University, Ankara, Turkey. He is interested in decision-making and learning under uncertainty. Yet is the project PI.

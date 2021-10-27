@@ -8,7 +8,11 @@ bodyClass: "page-team"
     <div class="col-12 col-md-8">
       <div class="team team-single">
         <h1 class="title">{{page.title}}</h1>
+        {% if page.linkedinurl %}
+        <h2><a target="_blank" href="{{ page.linkedinurl }}" rel="noreferrer">Home Page</a></h2>
+        {% endif %}
         <div class="content">{{content}}</div>
+        {{site.teams}}
       </div>
     </div>
   </div>

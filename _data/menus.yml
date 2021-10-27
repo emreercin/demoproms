@@ -1,24 +1,14 @@
 main:
-  - name: "Bayesian Network"
-    url: "/services/"
-    weight: 2
-  - name: "Team"
-    url: "/team/"
-    weight: 3
-  - name: "Overview"
-    url: "/about/"
-    weight: 4
-  - name: "Links"
-    url: "/contact/"
-    weight: 5
-  - name: "Turkish"
-    url: "https://emreercin.github.io/demopromstr"
-    weight: 6
-
-footer:
   - name: "Home"
     url: "/"
     weight: 1
-  - name: "Bayesian Network"
+  - name: "Overview"
     url: "/about/"
     weight: 2
+  - name: "Bayesian Networks"
+    url: "/bns/"
+    weight: 3
+  - name: "Team"
+    url: "/team/"
+    weight: 4
+

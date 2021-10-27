@@ -1,5 +1,4 @@
-baseurl: ''
-url: "http://users.metu.edu.tr/byet/COGS566"
+baseurl: http://users.metu.edu.tr/byet/demoproms/
 permalink: pretty
 title: 'DEMOPROMS'
 

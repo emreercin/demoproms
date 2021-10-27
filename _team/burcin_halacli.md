@@ -10,4 +10,4 @@ weight: 2
 layout: team
 ---
 
-Burçin is an associate professor in the Department of Internal Diseases at the Medicine Faculty, Hacettepe University, Ankara, Turkey. His main research are is Intensive Care and Internal Diseases.
+Dr. Burçin Halaçlı is an assistant professor in the Department of Internal Diseases at the Medicine Faculty, Hacettepe University, Ankara, Turkey. His main research are is Intensive Care and Internal Diseases.
